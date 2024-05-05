@@ -1,0 +1,710 @@
+05.05.2024 16-41-21 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 15: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x0000026C5DD2EC80>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_current_language'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 15: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 16-41-21 ERROR "GET /news/ HTTP/1.1" 500 243929 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
+05.05.2024 16-44-24 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 15: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x0000013485F0EBC0>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_current_language'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 15: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 16-44-24 ERROR "GET /news/ HTTP/1.1" 500 244214 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
+05.05.2024 16-46-04 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x00000169E4838A40>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_current_language'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 16-46-04 ERROR "GET /news/ HTTP/1.1" 500 236778 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
+05.05.2024 16-46-07 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x00000169E47EAA40>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_current_language'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 16-46-07 ERROR "GET /news/ HTTP/1.1" 500 236778 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
+05.05.2024 16-46-07 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x00000169E4809AC0>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_current_language'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 16-46-07 ERROR "GET /news/ HTTP/1.1" 500 236778 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
+05.05.2024 16-46-07 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x00000169E474CCC0>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_current_language'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 16-46-07 ERROR "GET /news/ HTTP/1.1" 500 236778 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
+05.05.2024 16-46-08 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x00000169E47A5580>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_current_language'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 16-46-08 ERROR "GET /news/ HTTP/1.1" 500 236778 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
+05.05.2024 16-48-32 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 23: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001F27FF9F140>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_current_language'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 23: 'get_current_language', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 16-48-32 ERROR "GET /news/ HTTP/1.1" 500 239986 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
+05.05.2024 16-49-55 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 25: 'get_available_languages', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001F27FF0BAC0>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_available_languages'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 25: 'get_available_languages', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 16-49-55 ERROR "GET /news/ HTTP/1.1" 500 238898 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
+05.05.2024 20-51-02 ERROR Internal Server Error: /news/ C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 39: 'get_current_timezone', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001845F36B240>)
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'get_current_timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 39: 'get_current_timezone', expected 'endblock'. Did you forget to register or load this tag?
+05.05.2024 20-51-02 ERROR "GET /news/ HTTP/1.1" 500 253828 C:\Users\makse\Desktop\News-Portal-1-main\News-Portal-1-main\News Portal1\venv\Lib\site-packages\django\core\servers\basehttp.py None
